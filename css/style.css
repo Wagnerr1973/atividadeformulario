@@ -1,0 +1,73 @@
+/*body*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+}
+header {
+  background: linear-gradient(to right, #293ce7, #0c002c);
+  box-sizing: content-box;
+  margin-bottom: 30px;
+  position: fixed;
+  top: 0px;
+}
+
+.menu li a {
+  border-radius: 10px;
+  color: white;
+  padding: 800px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links li a,
+.dropdown-content a {
+  font-family: rift, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0px 15px;
+}
+
+html,
+body {
+  height: 100%;
+  align-items: center;
+  background: linear-gradient(to right, #211c2d, #0f101f);
+  color: white;
+}
+
+.h1 {
+  text-align: center;
+  padding: 40px;
+}
+/*footer */
+footer {
+  background: linear-gradient(to right, #293ce7, #0c002c);
+  margin: 0 auto;
+  align-content: left;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#senac-logo-footer {
+  padding: 9px;
+  width: 35%;
+}
