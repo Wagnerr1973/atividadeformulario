@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Metadados -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/formulario.css"/>
+
+    <!-- Título da página (aparece na aba) -->
+        <title>Formulario</title>
+      </head>
+
+  <body>
+    <form>
+    <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+            <div>
+              <h1 id="titulo">Formulário</h1>
+            </div>
+              <br>
+    <!-- Início do formulário -->
+            
+              <fieldset class="grupo">
+        <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+            <div class="campo">
+              <label for="nome"><strong>Nome</strong></label>
+              <input type="text" name="nome" id="nome" required />
+            </div>
+
+        <!-- Campo do data de nascimento com legenda "datadenascimento" e css de classe "campo" -->
+            <div class="campo">
+              <label for="idDtNasc"><strong>Data de Nascimento</strong></label>
+              <input type="text" name="date" id="idDtNasc" required />
+            </div>
+          </fieldset>
+
+      <!-- Campo de email com-->
+          <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required />
+          </div>
+
+      <!--Campo de telefone-->
+          <div class="campo">
+            <label for="idTelc"><strong>Telefone</strong></label>
+            <input type="tel" name="telefone" id="idTelc" required />
+          </div>
+
+      <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+                      <div class="campo">
+                        <legend>Dados acadêmicos</legend>
+                        <label for="idCurso">Curso</label>
+                        <select name="curso">
+                            <option value="ADS">Analise Desenvolvimento de Sistemas</option>
+                            <option value="GTI">Gestão de Tecnologia da Informação</option>
+                        </select>
+                        <br>
+                        <label for="idSem">Semestre</label>
+                        <div class="semestre">
+                            <input type="radio" id="id1sem" name="semestre" value="1">
+                            <label for="id1Sem">1º Semestre</label>
+                            <input type="radio" id="id2sem" name="semestre" value="2">
+                            <label for="id2Sem">2º Semestre</label>
+                            <input type="radio" id="id3sem" name="semestre" value="3">
+                            <label for="id3Sem">3º Semestre</label>
+                            <input type="radio" id="id4sem" name="semestre" value="4">
+                            <label for="id4Sem">4º Semestre</label>
+                            <input type="radio" id="id5sem" name="semestre" value="5">
+                            <label for="id5Sem">5º Semestre</label>
+                        </div>
+                             <br>
+        <!--Campo trabalho-->
+              <label for="idTrab">Trabalha?</label>
+                  <input type="checkbox" name="trabalha" id="idTrab">
+                  <br>
+        <!--Campo local trabalho-->
+              <fieldset>
+                  <label for="idLoc">Local de Trabalho</label>
+                  <input type="text" id="idLoc" name="locTrab">
+                  <br>
+              </fieldset>
+      <!-- Caixa de texto -->
+              <div class="campo">
+                <br />
+                <label for="experiencia"
+                  ><strong>Descreva sua experiência: </strong></label>
+                <textarea
+                  rows="6"
+                  style="width: 26em"
+                  id="experiencia"
+                  name="experiencia"
+                ></textarea>
+              </div>
+              <br>
+      
+      <!-- Botão para enviar o formulário -->
+                    <input type="submit" value="Gravar">
+                      </input>
+                    <input type="reset" value="Limpar">
+                      </input>
+                  
+    </form>
+  </body>
+</html>
